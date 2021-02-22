@@ -42,6 +42,7 @@ body {
     border: none;
     padding: 1em;
     border-radius: 1em;
+    transition: 1s;
 }
 
 .form-input:hover {
@@ -67,6 +68,16 @@ body {
 .form-button:hover {
     background-color: rgb(119, 201, 201);
     transition: 1s;
+}
+
+.input-alert {
+    background-color: rgb(153, 10, 0);
+    color: white;
+    transition: 1s;
+}
+
+.input-alert::placeholder {
+    color: white;
 }
 
 /* BUDGET DISPLAY */
