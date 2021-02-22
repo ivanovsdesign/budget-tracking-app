@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: azure;
+}
+
+.header {
+    padding: 1em 1em 1em 2em;
+    background-color: rgb(212, 253, 253);
+}
+
+/* CONTAINER */
+
+.container {
+    margin: 5em 4em 4em 5em;
+    display: grid;
+}
+
+/* FORMS */
+
+.income-setup {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.expenses-enter {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+.form-headline {
+    margin: .4em;
+    font-size: 1.5em;
+}
+
+.form-input {
+    border: none;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.form-input:hover {
+    background-color: rgb(208, 236, 236);
+    transition: 1s;
+}
+
+.form-input:focus {
+    background-color: rgb(23, 138, 138);
+    color: white;
+    transition: 1s;
+    outline: thin;
+}
+
+.form-button {
+    border: none;
+    padding: 1em;
+    border-radius: 1em;
+    transition: 2s;
+    outline: thin;
+}
+
+.form-button:hover {
+    background-color: rgb(119, 201, 201);
+    transition: 1s;
+}
+
+/* BUDGET DISPLAY */
+
+.visual-area {
+   grid-column: 2/2;
+   grid-row: 1/3;
+   display: flex;
+}
+
+.visual {
+    margin: 1em;
+    text-align: center;
+}
+
+.display-heading {
+    margin-bottom: 1em;
+}
+
+/* ENTRIES LIST */
+
+.display-area {
+    grid-column: 1/3;
+    margin-top: 2em;
+    padding: 1em;
+    display: table;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.display-entry {
+    display: table-row;
+}
+
+.entry-title, .entry-button {
+    display: table-cell;
+}
+
+.entry-button {
+    
+}
+
+.entry-button:hover {
+    cursor: pointer;
+    color: cadetblue;
+}

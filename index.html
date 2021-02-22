@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Budget app</title>
+</head>
+<body>
+    <div class="header">
+        <h4 class="app-title">Budget app</h1>
+    </div>
+    <div class="container">
+        <div class="income-setup">
+            <form class="setup-form income">
+                <h1 class="form-headline">Income</h1>
+                <input type="text" class="form-input" placeholder="Enter your income" id="income-input">
+                <button type="button" class="form-button" id="income-btn">Enter</button>
+            </form>
+        </div>
+        <div class="expenses-enter">
+            <form class="setup-form expenses">
+                <h1 class="form-headline">Expenses</h1>
+                <input type="text" class="form-input" placeholder="Expense description" id="expenses-input">
+                <input type="text" class="form-input" placeholder="Expense amount" id="expenses-amount-input">
+                <button type="button" class="form-button" id="expenses-btn">Enter</button>
+            </form>
+        </div>
+        <div class="visual-area">
+            <div class="visual visual-income">
+                <p class="visual">Income</p>
+                <h2 class="visual-sum" id="income-counter">$1000</h2>
+            </div>
+            <div class="visual visual-expenses">
+                <p class="visual">Expenses</p>
+                <h2 class="visual-sum" id="expenses-counter">$1000</h2>
+            </div>
+            <div class="visual visual-budget">
+                <p class="visual">Budget</p>
+                <h2 class="visual-sum" id="budget-counter">$1000</h2>
+            </div>
+        </div>
+        <div class="display-area">
+            <h3 class="display-heading">Expenses list</h3>
+            <div class="display-entry">
+                <p class="entry-title">Expense title</p>
+                <p class="entry-button" id="edit-btn">Edit</p>
+                <p class="entry-button" id="delete-btn">Delete</p>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
